@@ -1,0 +1,24 @@
+<!--city-jobOpenings-form.vtl-->
+<h1>Add a job opening to $city.getCityName()</h1>
+
+<form action="/jobOpenings" method="post">
+  <input id="cityId" name="cityId" type="hidden" value="$city.getId()">
+
+  <div class="form-group">
+  <label for="jobTitle">Job Title</label>
+  <input id="jobTitle" name="jobTitle" type="text">
+  </div>
+
+  <div class="form-group">
+  <label for="description">Job Description</label>
+  <input id="description" name="description" type="text">
+  </div>
+
+  <div class="form-group">
+  <label for="contactInfo">Contact Info</label>
+  <input id="contactInfo" name="contactInfo" type="text">
+  </div>
+
+  <button type="submit" class="btn btn-default">Add Job Opening</button>
+</form>
+<!--city-jobOpenings-form.vtl-->

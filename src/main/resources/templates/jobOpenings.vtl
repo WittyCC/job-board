@@ -1,0 +1,9 @@
+<!--jobOpenings.vtl-->
+<h1>All Job Openings</h1>
+<ul>
+  #foreach ($jobOpening in $jobOpenings)
+    <li><a href="/jobOpenings/$jobOpening.getId()">$jobOpening.getJobTitle()</a></li>
+  #end
+</ul>
+<a href="/cities/new">Add New City</a>
+<!--jobOpenings.vtl-->

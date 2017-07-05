@@ -1,0 +1,11 @@
+<!--city.vtl-->
+<h1>$city.getCityName() job openings:</h1>
+
+<ul>
+  #foreach($jobOpening in $city.getJobOpenings())
+  <li>$jobOpening.getJobTitle()</li>
+  #end
+</ul>
+<a href="/cities/$city.getId()/jobOpenings/new">Add a new job opening</a>
+<a href="/cities">All Cities</a>
+<!--city.vtl-->
